@@ -1,9 +1,11 @@
-def main():
-    #your code goes here
-    x = int(input("Enter a number"))
-    y = int(input("Enter another number"))
+def cowabungaFunction(number):
+    #Your function code goes here
+    print('0')
 
-    print(x*y)
+def main():
+    #Your main code goes here
+    num = int(input())
+    cowabungaFunction(num)
 
 if __name__ =='__main__':
     main()
