@@ -1,26 +1,20 @@
 import pytest
 import student 
 
+def test_one():
+    student.cowabungaFunction(1)
+    out, err = capsys.readouterr()
+    assert out.lower() == "cowabunga"
 
+def test_two():
+    student.cowabungaFunction(2)
+    out, err = capsys.readouterr()
+    assert out.lower() == "cowabungacowabunga"
 
-def test_inputs():
-    input_values=['3','4']
-    output=[]
-
-    def mock_input(s=None):
-        if s is not None:
-            output.append(s)
-            return input_values.pop(0)
-        else:
-            output.append("")
-            return input_values.pop(0)
-    
-    student.input = mock_input
-    student.print = lambda s : output.append(s)
-
-    student.main()
-
-    assert output[2]==7
+def test_eight():
+    student.cowabungaFunction(8)
+    out, err = capsys.readouterr()
+    assert out.lower() == "cowabungacowabungacowabungacowabungacowabungacowabungacowabungacowabunga"
 
 
 
