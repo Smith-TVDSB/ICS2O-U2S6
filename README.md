@@ -1,14 +1,22 @@
-# Template for Python Exercises
+# 2-6 Exercise 1
 This example project is written in Python, and tested with pytest.
 
-### The assignment
-The tests are failing right now because the method isn't outputting the correct string. Fixing this up will make the tests green.
+## The assignment
+Edit the student.py file and make the functions work as intended.
 
-### Setup command
-`sudo -H pip3 install pytest`
+### Exercise 1  
+Make the Cowabunga function that outputs the word 'Cowabunga' as many times as the number passed into the function.
 
-### Run command
-`pytest`
+|Number   |Output       |
+|---------|-------------|
+|1        | Cowabunga   |
+|2        |CowabungaCowabunga|
+|3        |CowabungaCowabungaCowabunga|
+etc.  
+
+
+
+
 
 ### Notes
 - pip's install path is not included in the PATH var by default, so without installing via `sudo -H`, pytest would be unaccessible.
